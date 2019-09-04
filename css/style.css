@@ -267,3 +267,31 @@ a {color:#244D8B}
 	color: #DAB133;
 	TEXT-DECORATION: underline;
 }
+
+/*------------news------------*/
+
+.myviwe2 {
+	background: rebeccapurple;
+	border: blue 2px solid;
+}
+.mycard {
+	box-shadow: 0px 0px 10px;
+	margin-bottom: 20px;
+}
+.mycontainer {
+	/* border: blue 2px solid; */
+	height: 500px;
+}
+.mycardimage {
+
+	float: left;
+	width: 32%;
+	height: 200px;
+	margin-right: 7px;
+}
+.mycardimage img {
+	border-radius: 8px;
+	max-width: 100%;
+	max-height: 200px;
+	box-shadow: 3px 3px 1px #005cbf;
+}
