@@ -60,23 +60,33 @@
     <div class="row">
         <div class="col-xl-10">
             <div class="container"> <!--Ліва колнка для новин-->
-
+                <?php include 'function.php';
+                while ($row = mysqli_fetch_assoc($res))
+                {
+                ?>
                 <div class="card md-3 mycard">  <!--Картка новин-->
                             <div class="card-body">
-                                <div class="mycardimage">
-                                    <img src="https://via.placeholder.com/300x200" alt="">
-                                </div>
-                                <div class="mycardimage">
-                                    <img src="https://via.placeholder.com/300" alt="">
-                                </div>
-                                <div class="mycardimage">
-                                    <img src="https://via.placeholder.com/200x300" alt="">
-                                </div>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Thisds fds fdsf dsf dsf ewg rg ag fdagfagfd agdfag dfag fgadfgfdgifdgfd gfg dfg fdagfdag fdag fdagfd agfdag fdagfdh gfhgh a fh shg shgsgfdahfdahfdakhfkdahkah fhahfdahdhg jhhjhdjhfjhdjg djgjhgdjhgdjg shgfshgshgfsj hjghdjhkhsdh sghgshgjjkjk jfkdkhdghgf hgjhgkhshsgh gjdgjshjyhg jd gh treh tth fhgfigwgjjsgrfjgow gtgeruw eruiwg rehguerigh rgueriw fhugurkskrighr hguririogh rhguerfierhg uurifhd 4y8qohfrue tyuriqofuier heuqiofiewh equioeiwu hruewiqoiueh heuqiofuie reuqoieuh heuiieuh hewuiqoieu hfuiqoewuihf heuiofiewuh heuqioiqewu fheuqoiuewh hfewuiqoei hfheuioiewuh heuoqiu ehfheuqi is a wider card with ппавпку  пквып кпкв пкр кфпк рек онео ныр аыо лпрл впонв ееыреырекрекрекыреsupporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title font-weight-bold"><?= $row['name'] ?></h5>
+                                <h6 class="font-weight-bold" align="right"><?=date('d-m-Y', strtotime($row['datanew']))  ?></h6>
+
+
+                                <?php
+                                if (isset($row['image1'])) {
+                                    echo '<div class="mycardimage"><img src=" '. $row['image1'] .'" alt=""></div>' ;
+                                }
+                                if (isset($row['image2'])) {
+                                    echo '<div class="mycardimage"><img src=" '. $row['image2'] .'" alt=""></div>' ;
+                                }
+                                if (isset($row['image3'])) {
+                                    echo '<div class="mycardimage"><img src=" '. $row['image3'] .'" alt=""></div>' ;
+                                }
+                                ?>
+                                <p class="card-title font-weight-bold"><?= $row{"temanew"} ?></p>
+                                <p class="card-text"><?= $row['textnew'] ?></p>
                                 <p class="card-text" align="right"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                 </div>
+                <? } ?>
 
                 <div class="card md-3 mycard">  <!--Картка новин-->
                     <div class="card-body">

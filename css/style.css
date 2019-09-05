@@ -278,6 +278,11 @@ a {color:#244D8B}
 	box-shadow: 0px 0px 10px;
 	margin-bottom: 20px;
 }
+.mycard h6 {
+	color: #005cbf;
+	text-decoration-line: underline;
+
+}
 .mycontainer {
 	/* border: blue 2px solid; */
 	height: 500px;
@@ -287,7 +292,7 @@ a {color:#244D8B}
 	float: left;
 	width: 32%;
 	height: 200px;
-	margin-right: 7px;
+	margin-right: 9px;
 }
 .mycardimage img {
 	border-radius: 8px;

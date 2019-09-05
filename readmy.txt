@@ -1,0 +1,6 @@
+«м≥ни у:
+	novyny.php
+	edit.php
+	css/style.css
+	function.php
+	connect_brrb.php
