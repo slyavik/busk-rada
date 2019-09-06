@@ -6,7 +6,11 @@
     <title>Буська районна рада</title>
     <meta name="description" content="Busk’s district council">
     <meta name="keywords" content="Busk, district, council, Буськ, район, рада">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/triz.gif">
     <style type="text/css">
@@ -52,14 +56,56 @@
                                     <tr>
                                         <td height="219" valign="top" class="base_txt">
                                             <!--Contend-->
-
-
-
-
-
-
-
-
+                                            <div class="contact-form">
+                                                <div class="container">
+                                                    <form action="edit.php">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3">
+                                                                <h1 style="color: #005cbf">Створення новини</h1>
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-9 right">
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Назва" class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <lebel for="sel" class="col-lg-3 col-from-label">Виберіть тип новини:</lebel>
+                                                                    <div class="col-lg-9 from-select">
+                                                                        <select id="sel" name="selection">
+                                                                            <option>новина</option>
+                                                                            <option>оголошенння</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="mydate" class="col-lg-3 col-form-label">Дата повідомлення</label>
+                                                                    <div class=" col-lg-9">
+                                                                        <input class="form-control" type="date" value="" id="mydate">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Зсилка на зображення №1" class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Зсилка на зображення №2" class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Зсилка на зображення №3" class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <textarea rows="3" class="form-control form-control-lg" placeholder="Тема повідомлення"></textarea>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <textarea rows="5" class="form-control form-control-lg" placeholder="Текст повідомлення"></textarea>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Висновок" class="form-control form-control-lg">
+                                                                </div>
+                                                                <input type="submit" class="btn btn-primary btn-block" value="Опублікувати">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                             <!--end Contend-->
                                         </td>
                                     </tr>
