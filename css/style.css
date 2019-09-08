@@ -300,3 +300,28 @@ a {color:#244D8B}
 	max-height: 200px;
 	box-shadow: 3px 3px 1px #005cbf;
 }
+.slider1button {
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+.slider1button:hover {
+    background: #adb5bd;
+    text-decoration-line: underline;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+.slider1button:active {
+    box-shadow: 0px 0px 10px #005cbf;
+    background: #adb5bd;
+    text-decoration-line: underline;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+.my-none {    display: none;   }
+.my-marg {   margin-bottom: 20px}

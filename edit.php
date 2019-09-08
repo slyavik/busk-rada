@@ -83,13 +83,13 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Зсилка на зображення №1" class="form-control form-control-lg">
+                                                                    <input type="text" placeholder="Посилання на зображення № 1" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Зсилка на зображення №2" class="form-control form-control-lg">
+                                                                    <input type="text" placeholder="Посилання на зображення № 2" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Зсилка на зображення №3" class="form-control form-control-lg">
+                                                                    <input type="text" placeholder="Посилання на зображення № 3" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <textarea rows="3" class="form-control form-control-lg" placeholder="Тема повідомлення"></textarea>

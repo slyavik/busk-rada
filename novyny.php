@@ -17,6 +17,11 @@
         body {
             background-image: url(images/bg.gif);
         }
+        .body-my {
+            background-image: url(images/bg.gif);
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -60,6 +65,7 @@
     <div class="row">
         <div class="col-xl-10">
             <div class="container"> <!--Ліва колнка для новин-->
+
                 <?php include 'function.php';
                 while ($row = mysqli_fetch_assoc($res))
                 {
@@ -83,7 +89,7 @@
                                 ?>
                                 <p class="card-title font-weight-bold"><?= $row{"temanew"} ?></p>
                                 <p class="card-text"><?= $row['textnew'] ?></p>
-                                <p class="card-text" align="right"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <!-- <p class="card-text" align="right"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                 </div>
                 <? } ?>
@@ -106,16 +112,51 @@
                 </div>
             </div>
         </div>
-        <div class="order-first order-xl-0 col-xl-2 border">Настройки</div>
+        <div class="order-first order-xl-0 col-xl-2 body-my"> <!--Права колонка-->
+            <div class="sticky-top">
+                <script>
+                    $(document).ready(function() {
+                        $("#slider1").click(function() {
+                            $("#slid1").slideToggle("slow");
+                        })
+                    })
+                </script>
+                <div id="slider1" class="slider1button">
+                    Параметри новин
+                </div>
+                <div class="row my-marg">
+                    <div id="slid1" class="col my-none d-xl-block">
+                        По даті:
+                        <form action="novyny.php">
+                            <input type="date">
+                        </form>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $("#slider2").click(function() {
+                            $("#slid2").slideToggle("slow");
+                        })
+                    })
+                </script>
+                <div id="slider2" class="slider1button">
+                    Для новини
+                </div>
+                <div class="row my-marg">
+                    <div id="slid2" class="col my-none">
+                        <div class="container">
+                            <!-- Button to Open the Modal -->
+                            <br>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Додати
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-
-
-
-
-
-
                                             <!--end Contend-->
                                         </td>
                                     </tr>
@@ -133,6 +174,35 @@
     ?>
     <img src="" height="250">
     </table>
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Авторизація</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body contact-form">
+                <form action="edit.php">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваш логін:" class="form-control form-control-lg">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Ваш пароль:" class="form-control form-control-lg">
+                    </div>
+                    <div style="float: right">
+                    <input type="submit" class="btn btn-primary" value="Відправити">
+                    </div>
+            </div>
+                </form>
+        </div>
+    </div>
+</div>
+
 </body>
 
 
