@@ -1,6 +1,19 @@
+<?php
+session_start();
+    if ($_GET['do'] == 'logout')
+        {
+            unset($_SESSION['admin']);
+            session_destroy();
+                 }
+    if (!$_SESSION['admin'])
+        {
+            header("location:novyny.php");
+            exit();
+        }
+
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 <head>
     <meta charset="UTF-8"/>
     <title>Буська районна рада</title>
@@ -62,6 +75,8 @@
                                                         <div class="row">
                                                             <div class="col-md-12 col-lg-3">
                                                                 <h1 style="color: #005cbf">Створення новини</h1>
+                                                                <br>
+                                                                <a href="edit.php?do=logout">Вихід з адмінки</a>
                                                             </div>
                                                             <div class="col-md-12 col-lg-9 right">
                                                                 <div class="form-group">

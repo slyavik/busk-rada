@@ -187,15 +187,15 @@
 
             <!-- Modal body -->
             <div class="modal-body contact-form">
-                <form action="edit.php">
+                <form action="func.php" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Ваш логін:" class="form-control form-control-lg">
+                        <input type="text" name="login" placeholder="Ваш логін:" class="form-control form-control-lg">
                     </div>
                     <div class="form-group">
-                        <input type="password" placeholder="Ваш пароль:" class="form-control form-control-lg">
+                        <input type="password" name="pass" placeholder="Ваш пароль:" class="form-control form-control-lg">
                     </div>
                     <div style="float: right">
-                    <input type="submit" class="btn btn-primary" value="Відправити">
+                    <input type="submit" name="logsubmit" class="btn btn-primary" value="Відправити">
                     </div>
             </div>
                 </form>
