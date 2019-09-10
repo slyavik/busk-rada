@@ -71,7 +71,10 @@ session_start();
                                             <!--Contend-->
                                             <div class="contact-form">
                                                 <div class="container">
-                                                    <form action="edit.php">
+                                                    <?php
+                                                    include 'functionedit.php';
+                                                    ?>
+                                                    <form method="post" action="edit.php">
                                                         <div class="row">
                                                             <div class="col-md-12 col-lg-3">
                                                                 <h1 style="color: #005cbf">Створення новини</h1>
@@ -80,7 +83,7 @@ session_start();
                                                             </div>
                                                             <div class="col-md-12 col-lg-9 right">
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Назва" class="form-control form-control-lg">
+                                                                    <input type="text" name="name" placeholder="Назва" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <lebel for="sel" class="col-lg-3 col-from-label">Виберіть тип новини:</lebel>
@@ -94,26 +97,26 @@ session_start();
                                                                 <div class="form-group row">
                                                                     <label for="mydate" class="col-lg-3 col-form-label">Дата повідомлення</label>
                                                                     <div class=" col-lg-9">
-                                                                        <input class="form-control" type="date" value="" id="mydate">
+                                                                        <input name="datanew" class="form-control" type="date" value="" id="mydate">
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Посилання на зображення № 1" class="form-control form-control-lg">
+                                                                    <input type="text" name="image1" placeholder="Посилання на зображення № 1" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Посилання на зображення № 2" class="form-control form-control-lg">
+                                                                    <input type="text" name="image2" placeholder="Посилання на зображення № 2" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Посилання на зображення № 3" class="form-control form-control-lg">
+                                                                    <input type="text" name="image3" placeholder="Посилання на зображення № 3" class="form-control form-control-lg">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <textarea rows="3" class="form-control form-control-lg" placeholder="Тема повідомлення"></textarea>
+                                                                    <textarea name="temanew" rows="3" class="form-control form-control-lg" placeholder="Тема повідомлення"></textarea>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <textarea rows="5" class="form-control form-control-lg" placeholder="Текст повідомлення"></textarea>
+                                                                    <textarea name="textnew" rows="5" class="form-control form-control-lg" placeholder="Текст повідомлення"></textarea>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Висновок" class="form-control form-control-lg">
+                                                                    <input name="conclusion" type="text" placeholder="Висновок" class="form-control form-control-lg">
                                                                 </div>
                                                                 <input type="submit" class="btn btn-primary btn-block" value="Опублікувати">
                                                             </div>

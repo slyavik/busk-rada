@@ -77,18 +77,23 @@
 
 
                                 <?php
-                                if (isset($row['image1'])) {
+                                if (!empty($row['image1'])) {
                                     echo '<div class="mycardimage"><img src=" '. $row['image1'] .'" alt=""></div>' ;
                                 }
-                                if (isset($row['image2'])) {
+                                if (!empty($row['image2'])) {
                                     echo '<div class="mycardimage"><img src=" '. $row['image2'] .'" alt=""></div>' ;
                                 }
-                                if (isset($row['image3'])) {
+                                if (!empty($row['image3'])) {
                                     echo '<div class="mycardimage"><img src=" '. $row['image3'] .'" alt=""></div>' ;
                                 }
                                 ?>
                                 <p class="card-title font-weight-bold"><?= $row{"temanew"} ?></p>
                                 <p class="card-text"><?= $row['textnew'] ?></p>
+                                <?php
+                                if (isset($row['conclusion'])) {
+                                    echo '<p class="card-text" align="right"><small class="text-muted">'.$row['conclusion'].'</small></p>';
+                                }
+                                ?>
                                 <!-- <p class="card-text" align="right"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                 </div>
