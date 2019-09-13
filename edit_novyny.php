@@ -79,8 +79,8 @@ session_start();
                                                             <div class="col-md-12 col-lg-3">
                                                                 <h1 style="color: #005cbf">Редагування, видалення</h1>
                                                                 <br>
-                                                                <a href="edit.php">Створення новини</a><br><br>
-                                                                <a href="edit.php?do=logout">Вихід з адмінки</a>
+                                                                <a href="edit.php"><div class="mybutton">Створення новини</div></a>
+                                                                <a href="edit.php?do=logout"><div class="mybutton">Вихід з адмінки</div></a>
                                                             </div>
                                                             <div class="col-md-12 col-lg-9 right">
                                                                 <!--Форма редагуання новини-->
@@ -143,7 +143,7 @@ session_start();
                                                                     ?>
                                                                                                                                         <div class="card md-3 mycard">  <!--Картка новин-->
                                                                         <div class="card-body">
-                                                                            <h3>id: <?= $row['id'] ?> | <a href="edit_novyny.php?id_del=<?= $row["id"] ?>">Видалення новини</a> |
+                                                                            <h3>id: <?= $row['id'] ?> | <a href="edit_novyny.php?id_del=<?= $row["id"] ?>" style="color: red">Видалення новини</a> |
                                                                                 <a href="edit_novyny.php?id=<?=$row['id'] ?>">Редагування новини</a></h3>
 
                                                                             <hr>

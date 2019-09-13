@@ -79,8 +79,8 @@ session_start();
                                                             <div class="col-md-12 col-lg-3">
                                                                 <h1 style="color: #005cbf">Створення новини</h1>
                                                                 <br>
-                                                                <a href="edit_novyny.php">Редагування та видалення новин</a><br><br>
-                                                                <a href="edit.php?do=logout">Вихід з адмінки</a>
+                                                                <a href="edit_novyny.php"><div class="mybutton">Редагування та видалення новин</div></a>
+                                                                <a href="edit.php?do=logout"><div class="mybutton">Вихід з адмінки</div></a>
                                                             </div>
                                                             <div class="col-md-12 col-lg-9 right">
                                                                 <div class="form-group">
