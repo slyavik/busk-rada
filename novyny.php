@@ -61,7 +61,7 @@
                                     <tr>
                                         <td height="219" valign="top" class="base_txt">
                                             <!--Contend-->
-<div class="container mycontainer">
+<div class="container">
     <div class="row">
         <div class="col-xl-10">
             <div class="container"> <!--Ліва колнка для новин-->

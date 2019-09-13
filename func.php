@@ -12,9 +12,14 @@ if (empty($_POST['login'] && $_POST['pass']))
     exit();
 }
 
-$admin = 'admin';
-$pass = 'a029d0df84eb5549c641e04a9ef389e5';
+include 'connect_brrb.php';
+$sql_logpass = "SELECT id, login, password  FROM logpass WHERE ID = 1";
+$res_logpass = mysqli_query($conn, $sql_logpass);
 
+$row_logpass = mysqli_fetch_assoc($res_logpass);
+
+$admin = $row_logpass['login'];
+$pass = $row_logpass['password'];
 
 if ($_POST['logsubmit'])
 {

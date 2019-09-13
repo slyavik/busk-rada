@@ -83,6 +83,7 @@ session_start();
                                                                 <a href="edit.php?do=logout">Вихід з адмінки</a>
                                                             </div>
                                                             <div class="col-md-12 col-lg-9 right">
+                                                                <!--Форма редагуання новини-->
                                                                 <div id="slider" class="container edit_novyny" style="display: none">
                                                                     <form method="post" action="edit_novyny.php">
                                                                     <div class="form-group">
