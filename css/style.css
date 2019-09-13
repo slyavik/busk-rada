@@ -324,4 +324,35 @@ a {color:#244D8B}
     font-size: 18px;
 }
 .my-none {    display: none;   }
-.my-marg {   margin-bottom: 20px}
+.my-marg {   margin-bottom: 20px;}
+
+.edit_novyny {
+	margin-bottom: 30px;
+	border: #005cbf 1px solid;
+}
+.mybutton {
+	border: 1px solid #005cbf;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px;
+}
+.mybutton:hover {
+	background: #007bff;
+	text-decoration-line: underline;
+	border: 1px solid;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+.mybutton:active {
+	box-shadow: 0px 0px 10px #005cbf;
+	background: white;
+	color: black;
+	text-decoration-line: underline;
+	border: 1px solid;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+}

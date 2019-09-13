@@ -98,8 +98,8 @@
                             </div>
                 </div>
                 <? } ?>
-
-                <div class="card md-3 mycard">  <!--Картка новин-->
+                <!--Картка новин
+                <div class="card md-3 mycard">
                     <div class="card-body">
                         <div class="mycardimage">
                             <img src="https://via.placeholder.com/300x200" alt="">
@@ -114,7 +114,7 @@
                         <p class="card-text">Thisds fds fdsf dsf dsf ewg rg ag fdagfagfd agdfag dfag fgadfgfdgifdgfd gfg dfg fdagfdag fdag fdagfd agfdag fdagfdh gfhgh a fh shg shgsgfdahfdahfdakhfkdahkah fhahfdahdhg jhhjhdjhfjhdjg djgjhgdjhgdjg shgfshgshgfsj hjghdjhkhsdh sghgshgjjkjk jfkdkhdghgf hgjhgkhshsgh gjdgjshjyhg jd gh treh tth fhgfigwgjjsgrfjgow gtgeruw eruiwg rehguerigh rgueriw fhugurkskrighr hguririogh rhguerfierhg uurifhd 4y8qohfrue tyuriqofuier heuqiofiewh equioeiwu hruewiqoiueh heuqiofuie reuqoieuh heuiieuh hewuiqoieu hfuiqoewuihf heuiofiewuh heuqioiqewu fheuqoiuewh hfewuiqoei hfheuioiewuh heuoqiu ehfheuqi is a wider card with ппавпку  пквып кпкв пкр кфпк рек онео ныр аыо лпрл впонв ееыреырекрекрекыреsupporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text" align="right"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="order-first order-xl-0 col-xl-2 body-my"> <!--Права колонка-->

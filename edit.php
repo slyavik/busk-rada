@@ -79,6 +79,7 @@ session_start();
                                                             <div class="col-md-12 col-lg-3">
                                                                 <h1 style="color: #005cbf">Створення новини</h1>
                                                                 <br>
+                                                                <a href="edit_novyny.php">Редагування та видалення новин</a><br><br>
                                                                 <a href="edit.php?do=logout">Вихід з адмінки</a>
                                                             </div>
                                                             <div class="col-md-12 col-lg-9 right">
@@ -89,6 +90,7 @@ session_start();
                                                                     <lebel for="sel" class="col-lg-3 col-from-label">Виберіть тип новини:</lebel>
                                                                     <div class="col-lg-9 from-select">
                                                                         <select id="sel" name="selection">
+
                                                                             <option>новина</option>
                                                                             <option>оголошенння</option>
                                                                         </select>
@@ -97,7 +99,7 @@ session_start();
                                                                 <div class="form-group row">
                                                                     <label for="mydate" class="col-lg-3 col-form-label">Дата повідомлення</label>
                                                                     <div class=" col-lg-9">
-                                                                        <input name="datanew" class="form-control" type="date" value="" id="mydate">
+                                                                        <input name="datanew" class="form-control" type="date" id="mydate">
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
@@ -118,7 +120,7 @@ session_start();
                                                                 <div class="form-group">
                                                                     <input name="conclusion" type="text" placeholder="Висновок" class="form-control form-control-lg">
                                                                 </div>
-                                                                <input type="submit" class="btn btn-primary btn-block" value="Опублікувати">
+                                                                <input type="submit" name="submit" class="btn btn-primary btn-block" value="Опублікувати">
                                                             </div>
                                                         </div>
                                                     </form>
